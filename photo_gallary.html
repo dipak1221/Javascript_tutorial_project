@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #preview {
+            width: 600px;
+            margin: auto;
+            /* align-content: center; */
+        }
+
+        #preview img {
+            border: 4px solid rgb(177, 62, 62);
+            width: 700px;
+        }
+
+        #thumbnails {
+            width: 500px;
+            margin: auto;
+        }
+
+        #thumbnails img {
+            /* margin:auto; */
+            width: 100px;
+            border: 2px solid white;
+            margin: 0px 10px 10px 0px;
+        }
+
+        #thumbnails img:hover {
+            border: 3px solid green;
+            width: 115px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <h1 id="heading">Photo Gallery</h1>
+    <div id="container">
+        <div id="thumbnails">
+            <img onmouseenter="previewFunciton(this)" src="photos/clement-helardot-95YRwf6CNw8-unsplash.jpg"
+                name="photos/clement-helardot-95YRwf6CNw8-unsplash.jpg" alt="">
+            <img onmouseenter="previewFunciton(this)" src="photos/federico-respini-sYffw0LNr7s-unsplash.jpg"
+                name="photos/federico-respini-sYffw0LNr7s-unsplash.jpg" alt="">
+            <img onmouseenter="previewFunciton(this)" src="photos/niclas-illg-zEBqF_E2FIY-unsplash.jpg"
+                name="photos/niclas-illg-zEBqF_E2FIY-unsplash.jpg" alt="">
+            <img onmouseenter="previewFunciton(this)" src="photos/nicolas-gonzalez-183F_vNaN8A-unsplash.jpg"
+                name="photos/nicolas-gonzalez-183F_vNaN8A-unsplash.jpg" alt="">
+            
+        </div>
+        <div id="preview">
+            <img src="photos/clement-helardot-95YRwf6CNw8-unsplash.jpg" alt="">
+        </div>
+    </div>
+</body>
+<script>
+    function previewFunciton(ele) {
+        document.querySelector("#preview img").src = ele.name;
+        // console.log(ele.name);
+    }
+    document.body.style.background = "black";
+    document.getElementById("heading").style.color = "red";
+    document.getElementById("heading").style.textAlign = "center";
+</script>
+
+</html>
