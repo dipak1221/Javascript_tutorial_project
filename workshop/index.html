@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body bgcolor="pink">
+
+    <div id="body">
+
+        <form name="my_form" onsubmit="return getFormData()">
+            <br><br>
+            <span id="name_label" style="background-color: yellow;">Student Name</span>
+            <input type="text" name="student_name" id="student_name" style="background-color: yellow;">
+            <br><br>
+
+
+            <span id="age_label" style="background-color: yellow;">Age</span>
+            <input type="text" name="student_age" id="student_age" style="background-color: yellow;">
+
+            <br><br>
+            <span>Gender</span>
+            <input type="radio" name="gender" id="" value="M" checked><span>M</span>
+            <input type="radio" name="gender" id="" value="F"><span>F</span>
+            <br><br>
+
+
+            <label>City</label>
+            <select name="city" id="city">
+                <option value=""></option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Chennai">Chennai</option>
+            </select>
+            <br><br>
+
+
+            <label for="">Hobby</label>
+            <input type="checkbox" name="hobby" id="painting" value="painting">
+            <label for="">Painting</label>
+            <input type="checkbox" name="dancing" id="dancing" value="dancing">
+            <label for="">Dancing</label>
+            <input type="checkbox" name="sports" id="sports" value="sports">
+            <label for="">Sports</label>
+            <br><br>
+
+            <button type="submit" id="student_submit">Submit</button>
+
+
+        </form>
+        <br><br>
+        <div id="getData">
+
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
